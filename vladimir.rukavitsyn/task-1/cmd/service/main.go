@@ -21,7 +21,7 @@ func main() {
 
 	_, err = fmt.Scan(&operator)
 	if err != nil {
-		fmt.Println("Invalid operator")
+		fmt.Println("Invalid operation")
 		return
 	}
 
@@ -34,7 +34,7 @@ func main() {
 		fmt.Println(a * b)
 	case "/":
 		if b == 0 {
-			fmt.Println("ERROR: Division by zero!!!")
+			fmt.Println("Division by zero")
 			return
 		}
 		fmt.Println(a / b)
