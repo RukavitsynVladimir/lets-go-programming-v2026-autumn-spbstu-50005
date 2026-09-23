@@ -9,17 +9,20 @@ func main() {
 	)
 	_, err := fmt.Scan(&a)
 	if err != nil {
-		fmt.Println("ERROR: Invalid first operand!!!")
+		fmt.Println("Invalid first operand")
+		return
 	}
 
 	_, err = fmt.Scan(&b)
 	if err != nil {
-		fmt.Println("ERROR: Invalid second operand!!!")
+		fmt.Println("Invalid second operand")
+		return
 	}
 
 	_, err = fmt.Scan(&operator)
 	if err != nil {
-		fmt.Println("ERROR: Invalid operator!!!")
+		fmt.Println("Invalid operator")
+		return
 	}
 
 	switch operator {
@@ -36,7 +39,6 @@ func main() {
 		}
 		fmt.Println(a / b)
 	default:
-		fmt.Println("ERROR: Invalid operator!!!")
+		fmt.Println("Invalid operator")
 	}
-
 }
